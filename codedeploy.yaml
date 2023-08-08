@@ -259,3 +259,9 @@ Outputs:
       !Sub
         - "http://${dns}"
         - dns: !GetAtt Balanceador.DNSName
+  AplicacionCodeDeploy:
+    Description: Aplicacion de AWS CodeDeploy creada
+    Value: !Ref Aplicacion
+  GrupoDespliegueCodeDeploy:
+    Description: Grupo de despliegue de AWS CodeDeploy creado
+    Value: !Ref GrupoDespliegue
