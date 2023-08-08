@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "Resources": [
+      {
+        "TargetService": {
+          "Type": "AWS::ECS::Service",
+          "Properties": {
+            "TaskDefinition": "arn:aws:ecs:us-east-1:510547572113:task-definition/otra-test:1",
+            "LoadBalancerInfo": {
+              "ContainerName": "httpd",
+              "ContainerPort": 80
+            }
+          }
+        }
+      }
+    ],
+    "Hooks": []
+}
